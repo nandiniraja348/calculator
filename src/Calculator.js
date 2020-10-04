@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import styles from '/Users/nandiniraja/Desktop/TW learning Stuff/ELP_Neev/React/calculator/src/index.module.css'
+import Operations from "./components/Operations";
 
 class Calculator extends Component {
     constructor() {
@@ -89,9 +90,7 @@ class Calculator extends Component {
                 </div>
                 <div>
                     <label>Output : </label>
-                    <output id='output'>
-                        {this.state.output}
-                    </output>
+                    <Operations output={this.state.output}/>
                 </div>
             </form>
         </div>)
